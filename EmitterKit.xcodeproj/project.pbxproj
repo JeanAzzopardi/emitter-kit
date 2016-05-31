@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0578BE651CFDBA1D0097AAE4 /* EmitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0578BE541CFDBA060097AAE4 /* EmitterKit.framework */; };
+		0578BE6B1CFDBA540097AAE4 /* EmitterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB7AFFC1B11F01D007888F7 /* EmitterKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0578BE6C1CFDBA5C0097AAE4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4760D19CC1DA500831EE5 /* Helpers.swift */; };
+		0578BE6D1CFDBA650097AAE4 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F4CBA19BEA04E00595510 /* Emitter.swift */; };
+		0578BE6E1CFDBA650097AAE4 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FCD69219CA175C006B6D44 /* Signal.swift */; };
+		0578BE6F1CFDBA650097AAE4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102852E19C9BD420069F253 /* Event.swift */; };
+		0578BE701CFDBA650097AAE4 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102853F19C9DC4F0069F253 /* Notification.swift */; };
+		0578BE711CFDBA6C0097AAE4 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F4CBB19BEA04E00595510 /* Listener.swift */; };
+		0578BE721CFDBA6C0097AAE4 /* EmitterListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102853019C9BD600069F253 /* EmitterListener.swift */; };
+		0578BE731CFDBA6C0097AAE4 /* NotificationListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102853219C9BD6B0069F253 /* NotificationListener.swift */; };
+		0578BE741CFDBA6C0097AAE4 /* ChangeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102853419C9BD720069F253 /* ChangeListener.swift */; };
+		0578BE751CFDBA800097AAE4 /* EmitterListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E48E401B48CF730094741B /* EmitterListenerTests.swift */; };
+		0578BE761CFDBA800097AAE4 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E48E411B48CF730094741B /* PerformanceTests.swift */; };
+		0578BE771CFDBA800097AAE4 /* NotificationListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E48E421B48CF730094741B /* NotificationListenerTests.swift */; };
 		1102852F19C9BD420069F253 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102852E19C9BD420069F253 /* Event.swift */; };
 		1102853119C9BD600069F253 /* EmitterListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102853019C9BD600069F253 /* EmitterListener.swift */; };
 		1102853319C9BD6B0069F253 /* NotificationListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1102853219C9BD6B0069F253 /* NotificationListener.swift */; };
@@ -34,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0578BE661CFDBA1D0097AAE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 115F4C8E19BE9FCA00595510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0578BE531CFDBA060097AAE4;
+			remoteInfo = "EmitterKit-OSX";
+		};
 		11E48E3B1B48CF690094741B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 115F4C8E19BE9FCA00595510 /* Project object */;
@@ -44,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0578BE541CFDBA060097AAE4 /* EmitterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmitterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0578BE581CFDBA060097AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0578BE601CFDBA1D0097AAE4 /* EmitterKitSpecs-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EmitterKitSpecs-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0578BE641CFDBA1D0097AAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1102850D19C9BCEB0069F253 /* EmitterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmitterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1102852E19C9BD420069F253 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		1102853019C9BD600069F253 /* EmitterListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmitterListener.swift; sourceTree = "<group>"; };
@@ -65,6 +90,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0578BE501CFDBA060097AAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0578BE5D1CFDBA1D0097AAE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0578BE651CFDBA1D0097AAE4 /* EmitterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1102850919C9BCEB0069F253 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +123,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0578BE551CFDBA060097AAE4 /* EmitterKit-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0578BE581CFDBA060097AAE4 /* Info.plist */,
+			);
+			path = "EmitterKit-OSX";
+			sourceTree = "<group>";
+		};
+		0578BE611CFDBA1D0097AAE4 /* EmitterKitSpecs-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0578BE641CFDBA1D0097AAE4 /* Info.plist */,
+			);
+			path = "EmitterKitSpecs-OSX";
+			sourceTree = "<group>";
+		};
 		1102853D19C9D5F90069F253 /* Listener */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +166,8 @@
 			children = (
 				115F4C9819BE9FCA00595510 /* EmitterKit */,
 				11E48E361B48CF690094741B /* EmitterKitSpecs */,
+				0578BE551CFDBA060097AAE4 /* EmitterKit-OSX */,
+				0578BE611CFDBA1D0097AAE4 /* EmitterKitSpecs-OSX */,
 				115F4C9719BE9FCA00595510 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +177,8 @@
 			children = (
 				1102850D19C9BCEB0069F253 /* EmitterKit.framework */,
 				11E48E351B48CF690094741B /* EmitterKitSpecs.xctest */,
+				0578BE541CFDBA060097AAE4 /* EmitterKit.framework */,
+				0578BE601CFDBA1D0097AAE4 /* EmitterKitSpecs-OSX.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +226,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0578BE511CFDBA060097AAE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0578BE6B1CFDBA540097AAE4 /* EmitterKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1102850A19C9BCEB0069F253 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +254,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0578BE531CFDBA060097AAE4 /* EmitterKit-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0578BE5B1CFDBA060097AAE4 /* Build configuration list for PBXNativeTarget "EmitterKit-OSX" */;
+			buildPhases = (
+				0578BE4F1CFDBA060097AAE4 /* Sources */,
+				0578BE501CFDBA060097AAE4 /* Frameworks */,
+				0578BE511CFDBA060097AAE4 /* Headers */,
+				0578BE521CFDBA060097AAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EmitterKit-OSX";
+			productName = "EmitterKit-OSX";
+			productReference = 0578BE541CFDBA060097AAE4 /* EmitterKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0578BE5F1CFDBA1D0097AAE4 /* EmitterKitSpecs-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0578BE681CFDBA1D0097AAE4 /* Build configuration list for PBXNativeTarget "EmitterKitSpecs-OSX" */;
+			buildPhases = (
+				0578BE5C1CFDBA1D0097AAE4 /* Sources */,
+				0578BE5D1CFDBA1D0097AAE4 /* Frameworks */,
+				0578BE5E1CFDBA1D0097AAE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0578BE671CFDBA1D0097AAE4 /* PBXTargetDependency */,
+			);
+			name = "EmitterKitSpecs-OSX";
+			productName = "EmitterKitSpecs-OSX";
+			productReference = 0578BE601CFDBA1D0097AAE4 /* EmitterKitSpecs-OSX.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1102850C19C9BCEB0069F253 /* EmitterKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1102852519C9BCEB0069F253 /* Build configuration list for PBXNativeTarget "EmitterKit" */;
@@ -228,10 +332,16 @@
 		115F4C8E19BE9FCA00595510 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Alec Larson";
 				TargetAttributes = {
+					0578BE531CFDBA060097AAE4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0578BE5F1CFDBA1D0097AAE4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					1102850C19C9BCEB0069F253 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -255,11 +365,27 @@
 			targets = (
 				1102850C19C9BCEB0069F253 /* EmitterKit */,
 				11E48E341B48CF690094741B /* EmitterKitSpecs */,
+				0578BE531CFDBA060097AAE4 /* EmitterKit-OSX */,
+				0578BE5F1CFDBA1D0097AAE4 /* EmitterKitSpecs-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0578BE521CFDBA060097AAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0578BE5E1CFDBA1D0097AAE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1102850B19C9BCEB0069F253 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +403,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0578BE4F1CFDBA060097AAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0578BE6F1CFDBA650097AAE4 /* Event.swift in Sources */,
+				0578BE721CFDBA6C0097AAE4 /* EmitterListener.swift in Sources */,
+				0578BE731CFDBA6C0097AAE4 /* NotificationListener.swift in Sources */,
+				0578BE711CFDBA6C0097AAE4 /* Listener.swift in Sources */,
+				0578BE701CFDBA650097AAE4 /* Notification.swift in Sources */,
+				0578BE6D1CFDBA650097AAE4 /* Emitter.swift in Sources */,
+				0578BE6E1CFDBA650097AAE4 /* Signal.swift in Sources */,
+				0578BE741CFDBA6C0097AAE4 /* ChangeListener.swift in Sources */,
+				0578BE6C1CFDBA5C0097AAE4 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0578BE5C1CFDBA1D0097AAE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0578BE751CFDBA800097AAE4 /* EmitterListenerTests.swift in Sources */,
+				0578BE771CFDBA800097AAE4 /* NotificationListenerTests.swift in Sources */,
+				0578BE761CFDBA800097AAE4 /* PerformanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1102850819C9BCEB0069F253 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +459,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0578BE671CFDBA1D0097AAE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0578BE531CFDBA060097AAE4 /* EmitterKit-OSX */;
+			targetProxy = 0578BE661CFDBA1D0097AAE4 /* PBXContainerItemProxy */;
+		};
 		11E48E3C1B48CF690094741B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1102850C19C9BCEB0069F253 /* EmitterKit */;
@@ -315,6 +472,96 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0578BE591CFDBA060097AAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "EmitterKit-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanazzopardi.EmitterKit-OSX";
+				PRODUCT_NAME = EmitterKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0578BE5A1CFDBA060097AAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "EmitterKit-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanazzopardi.EmitterKit-OSX";
+				PRODUCT_NAME = EmitterKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0578BE691CFDBA1D0097AAE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "EmitterKitSpecs-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanazzopardi.EmitterKitSpecs-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0578BE6A1CFDBA1D0097AAE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "EmitterKitSpecs-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanazzopardi.EmitterKitSpecs-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1102852619C9BCEB0069F253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,6 +719,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0578BE5B1CFDBA060097AAE4 /* Build configuration list for PBXNativeTarget "EmitterKit-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0578BE591CFDBA060097AAE4 /* Debug */,
+				0578BE5A1CFDBA060097AAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0578BE681CFDBA1D0097AAE4 /* Build configuration list for PBXNativeTarget "EmitterKitSpecs-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0578BE691CFDBA1D0097AAE4 /* Debug */,
+				0578BE6A1CFDBA1D0097AAE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1102852519C9BCEB0069F253 /* Build configuration list for PBXNativeTarget "EmitterKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
